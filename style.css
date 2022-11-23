@@ -1,1 +1,50 @@
-/* font-family: 'Roboto', sans-serif; */
+body {
+    font-family: "Roboto", sans-serif;
+}
+header {
+    background-color: #3693d6;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+footer {
+    background-color: #3693d6;
+    color: white;
+}
+#aboutme {
+    background-color: #3693d6;
+    color: white;
+}
+#seemore {
+    background-color: #360093d6;
+}
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+ul a {
+    color: white;
+    text-decoration: none;
+}
+#sayhello{
+    background-color: white;
+    color: #3693d6;
+    text-align: center;
+    border: 1px solid #3693d6;
+    border-radius: 40%;
+    /* figure out how to get correct button shape */
+}
+#titleimage {
+    margin: 0;
+    padding: 0;
+}
+#ourwork{
+    background-color: #3693d6;
+    color: white;
+    text-align: center;
+    border: 1px solid #3693d6;
+    /* round the ends */
+}
+#testimonial {
+    color:#3693d6;
+}
