@@ -1,39 +1,24 @@
-body {
-    font-family: "Roboto", sans-serif;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(17, auto);
+html {
+    /* Display: grid; */
+    font-family: "Roboto", sans-serif;  
+    /* grid-template-rows: repeat(17, 1fr);    
+    grid-template-columns: repeat(3, 1fr); */
+
 }
 header {
+    display: flex;
     background-color: #3693d6;
+    width: 100vw;
+    height: 5vh;
     color: white;
-    grid-column-start: 1;
-    grid-column-end: 4;
     border: 1px solid black;
-    display: inline-flex;
-    flex-direction: row;
     justify-content: space-between;
+    padding: 0 50px 0 50px;
 }
-footer {
-    background-color: #3693d6;
-    color: white;
-    grid-row-start: 16;
-    grid-row-end: 18;
-    border: 1px solid black;
+#headerimage {
+    justify-self: start;
 }
-#aboutme {
-    background-color: #3693d6;
-    color: white;
-    grid-row-start: 5;
-    grid-row-end: 7;
-    border: 1px solid black;
 
-}
-#seemore {
-    background-color: #360093d6;
-    border: 1px solid black;
-
-}
 ul {
     text-decoration: none;
     list-style: none;
@@ -42,7 +27,6 @@ ul {
     display: flex;
     flex-direction: row;
     justify-self: flex-end;
-
 }
 ul a {
     color: white;
@@ -50,7 +34,6 @@ ul a {
     font-size: 2em;
     padding: 10px;
     border: 1px solid black;
-
 }
 #sayhello{
     background-color: white;
@@ -58,28 +41,46 @@ ul a {
     text-align: center;
     font-size: 2em;
     border: 1px solid #3693d6;
-    border: 1px solid black;
-    /* figure out how to get correct button shape */
+    border: 1px solid black; 
+    border-radius: 50px;
+}
+
+main {
+    display: grid;
+    grid-template-rows: repeat(14, auto);
+    grid-template-columns: repeat(3, auto);
 }
 #titleimage {
-    grid-row-start: 2;
-    grid-row-end: 5;
+    grid-row: 1/4;
+    width: 100vw;
     border: 1px solid black;
 }
-#images {
-    grid-row-start: 7;
-    grid-row-end: 13;
+#aboutme {
+    background-color: #3693d6;
+    color: white;
     border: 1px solid black;
+    text-align: center;
+}
 
+/* #seemore {
+    background-color: #3693d6;
+    border: 1px solid black;
+} */
+
+#mainimages {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    border: 3px solid black;
 }
-#ourwork{
+/* #seemore{
     background-color: #3693d6;
     color: white;
     text-align: center;
     border: 1px solid #3693d6;
-    /* round the ends */
-}
-#testimonial {
+    border-radius: 50px;
+} */
+/* #testimonial {
     color:#3693d6;
     grid-row-start: 13;
     grid-row-end: 16;
@@ -91,7 +92,7 @@ ul a {
     grid-column: 1 / span 3;
     border: 1px solid black;
 
-}
+} */
 #backpacker {
     grid-row: 7 / span 1;
     grid-column: 3 / span 1;
@@ -102,4 +103,14 @@ ul a {
     border: 1px solid black;
     grid-column: 2 / span 2;
 
+}
+footer {
+    display: flex;
+    background-color: #3693d6;
+    width: 100vw;
+    height: 5vh;
+    color: white;
+    border: 1px solid black;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
 }
