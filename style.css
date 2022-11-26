@@ -63,21 +63,32 @@ a:hover {
 h1 {
     position: absolute;
     color: white;
-    font-size: 5em;
-    font-weight: 100;
-    bottom: 40%;
-    left: 40%;
+    font-size: 10em;
+    font-weight: 400;
+    bottom: 39%;
+    left: 30%;
     transform: rotate(-10deg);
     /* go back and fix this centering like Zack said */
 }
+h2 {
+    position: absolute;
+    color: white;
+    bottom: 22%;
+    left: 53%;
+    transform: rotate(-10deg);
+    font-size: 8em;
+    font-weight: 300;
+}
 #ourwork {
     position: absolute;
-    bottom: 30%;
-    left: 50%;
+    bottom: 8%;
+    left:47%;
     background-color: #3693d6;
     color: white;
     border: 1px solid #3693d6;
     border-radius: 50px;
+    height: 4%;
+    width: 10%;
     font-size: 1.5em;
 
 }
