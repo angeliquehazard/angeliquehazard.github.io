@@ -44,10 +44,45 @@ ul a {
     border: 1px solid black; 
     border-radius: 50px;
 }
+a:hover {
+    color: gray;
+}
+#sayhello:hover {
+    background-color: gray;
+}
 #titleimage {
-    display: flex;
+    position: abolute;
+    z-index: -1;
     width: 100vw;
     border: 1px solid black;
+}
+#titleimageandtext {
+    position: relative;
+    text-align: center;
+}
+h1 {
+    position: absolute;
+    color: white;
+    font-size: 5em;
+    font-weight: 100;
+    bottom: 40%;
+    left: 40%;
+    transform: rotate(-10deg);
+    /* go back and fix this centering like Zack said */
+}
+#ourwork {
+    position: absolute;
+    bottom: 30%;
+    left: 50%;
+    background-color: #3693d6;
+    color: white;
+    border: 1px solid #3693d6;
+    border-radius: 50px;
+    font-size: 1.5em;
+
+}
+#ourwork:hover {
+    background-color: gray;
 }
 
 main #mainimages{
@@ -80,12 +115,33 @@ main #mainimages{
 } 
 
 #flyhigh {
+    position: relative;
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 4
 }
-
+#overlay {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(54,147,214,0.5);
+    color: white;
+    z-index: 2;
+    text-align: center;
+}
+#seemore {
+    background-color: #3693d6;
+    border: 2px solid white;
+    border-radius: 50px;
+    color: white;
+}
+#seemore:hover {
+    background-color: gray;
+}
 #aboutme {
     background-color: #3693d6;
     color: white;
@@ -145,10 +201,7 @@ h5 {
 } */
 
 
-/* #seemore {
-    background-color: #3693d6;
-    border: 1px solid black;
-} */
+
 
 
 /* #seemore{
