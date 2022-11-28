@@ -5,7 +5,7 @@ header {
     display: flex;
     background-color: #3693d6;
     width: 100vw;
-    height: 3vh;
+    height: 5vh;
     color: white;
     justify-content: space-between;
     padding: 0 5% 0 5%;
@@ -74,6 +74,22 @@ h2 {
     transform: rotate(-10deg);
     font-weight: 300;
 }
+#ourwork {
+    position: absolute;
+    bottom: 8%;
+    left:45%;
+    background-color: #3693d6;
+    color: white;
+    border: 1px solid #3693d6;
+    border-radius: 50px;
+    height: fit-content;
+    width: fit-content; 
+    font-size: 0.7em; 
+    padding: 1% 2% 1% 2%;
+}
+#ourwork:hover {
+    background-color: gray;
+}
 
 #aboutme {
     background-color: #3693d6;
@@ -94,22 +110,6 @@ h2 {
     padding: 0 15% 5% 15%;
     font-weight: lighter;
     
-}
-#ourwork {
-    position: absolute;
-    bottom: 8%;
-    left:45%;
-    background-color: #3693d6;
-    color: white;
-    border: 1px solid #3693d6;
-    border-radius: 50px;
-    height: fit-content;
-    width: fit-content; 
-    font-size: 0.7em; 
-    padding: 1% 2% 1% 2%;
-}
-#ourwork:hover {
-    background-color: gray;
 }
 #ourworktitle {
     text-align: center;
@@ -412,8 +412,11 @@ footer {
     grid-row-end: 2;
 }*/
 @media screen and (min-width: 768px) {
+    header {
+        height: 5vh
+    }
     #headerimage {
-        height: 100%;
+        height: 80%;
         width: 30%;
     }
     h1 {
@@ -466,6 +469,9 @@ footer {
         left:45%;
         font-size: 1em; 
         padding: 0.5% 1% 0.5% 1%;
+    }
+    #titleimage {
+        height: 40vh;
     }
     #aboutmetitle {
         background-color: #3693d6;  
@@ -524,5 +530,57 @@ footer {
     }
 }
 @media screen and (min-width: 1200px) {
+    header {
+        height: 7vh;
+    }
+    #headerimage {
+        width: 25vw;
+    }
+    ul a {
+        font-size: 1.5em;
+    }
+    #sayhello{
+        font-size: 1.5em;
+    }
+    h1 {
+
+        font-size: 4.5em;
+        font-weight: 300;
+        bottom: 42%;
+        left: 40%;
+    }
+    h2 {
+        bottom: 25%;
+        font-size: 3.5em;
+        left: 55%;
+        font-weight: 100;
+    }
+    #ourwork {
+        bottom: 8%;
+        left:47%;
+    }
+    footer {
+        height: 20vh;
+    }
+    #footericon{
+        height: 40%;
+    }
+    #footername {
+        height: 30%;
+        justify-self: center;
+    }
+    #locationtitle, #emailtitle, #phonetitle {
+        font-size: 1.5em;
+    }
+    #locationtxt, #emailtxt, #phonetxt {
+        font-size: 1em;
+    }
+    #smicons {
+        height: 20%;
+        width: 50%; 
+        justify-self: start;
+        align-self: center;
+        padding-bottom: 40%;
+    }
     
 }
